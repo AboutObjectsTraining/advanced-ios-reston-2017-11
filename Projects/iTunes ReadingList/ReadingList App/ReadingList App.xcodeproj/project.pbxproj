@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		AB7BA00B18F0561100E13EC0 /* Generate Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AB7BA00C18F0561100E13EC0 /* Build configuration list for PBXAggregateTarget "Generate Documentation" */;
+			buildPhases = (
+				AB7BA00F18F0563000E13EC0 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Generate Documentation";
+			productName = "Generate Documentation";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		AB529B9718ECB8BC00D173F3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB529B9618ECB8BC00D173F3 /* CoreData.framework */; };
+		AB529B9E18ECB92000D173F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB529B9D18ECB92000D173F3 /* Images.xcassets */; };
+		AB529BA018ECB94B00D173F3 /* AppDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB529B9F18ECB94B00D173F3 /* AppDefaults.plist */; };
+		AB529BA518ECB95A00D173F3 /* RELAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529BA218ECB95A00D173F3 /* RELAppDelegate.m */; };
+		AB529BA618ECB95A00D173F3 /* RELAppDelegate+Appearance.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529BA418ECB95A00D173F3 /* RELAppDelegate+Appearance.m */; };
+		AB529BAB18ECB97200D173F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB529BA718ECB97200D173F3 /* Main.storyboard */; };
+		AB529BAC18ECB97200D173F3 /* ReadingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB529BA818ECB97200D173F3 /* ReadingList.storyboard */; };
+		AB529BAD18ECB97200D173F3 /* iTunesReadingList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB529BA918ECB97200D173F3 /* iTunesReadingList.storyboard */; };
+		AB529BAE18ECB97200D173F3 /* iTunesSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB529BAA18ECB97200D173F3 /* iTunesSearch.storyboard */; };
+		AB529BB218ECB99700D173F3 /* iTunesSearch-Autolayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB529BAF18ECB99700D173F3 /* iTunesSearch-Autolayout.storyboard */; };
+		AB529BB318ECB99700D173F3 /* Main-Autolayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB529BB018ECB99700D173F3 /* Main-Autolayout.storyboard */; };
+		AB529BB418ECB99700D173F3 /* ReadingList-Autolayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB529BB118ECB99700D173F3 /* ReadingList-Autolayout.storyboard */; };
+		AB529BC018ECBA2800D173F3 /* UIStoryboardSegue+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529BBA18ECBA2800D173F3 /* UIStoryboardSegue+RELAdditions.m */; };
+		AB529BC118ECBA2800D173F3 /* NSString+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529BBC18ECBA2800D173F3 /* NSString+RELAdditions.m */; };
+		AB529BC218ECBA2800D173F3 /* UIColor+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529BBE18ECBA2800D173F3 /* UIColor+RELAdditions.m */; };
+		AB529BF618ECBB6E00D173F3 /* RELiTunesReadingListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529BF318ECBB6E00D173F3 /* RELiTunesReadingListCell.m */; };
+		AB529BF718ECBB6E00D173F3 /* RELiTunesReadingListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529BF518ECBB6E00D173F3 /* RELiTunesReadingListDataSource.m */; };
+		AB529C0418ECBB9500D173F3 /* RELSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529BF918ECBB9400D173F3 /* RELSearchController.m */; };
+		AB529C0518ECBB9500D173F3 /* RELSearchResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529BFB18ECBB9400D173F3 /* RELSearchResultsCell.m */; };
+		AB529C0618ECBB9500D173F3 /* RELSearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529BFD18ECBB9400D173F3 /* RELSearchResultsController.m */; };
+		AB529C0718ECBB9500D173F3 /* RELSearchResultsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529BFF18ECBB9500D173F3 /* RELSearchResultsDataSource.m */; };
+		AB529C0818ECBB9500D173F3 /* RELSearchResultsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529C0118ECBB9500D173F3 /* RELSearchResultsDetailController.m */; };
+		AB529C0918ECBB9500D173F3 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = AB529C0218ECBB9500D173F3 /* styles.css */; };
+		AB529C0A18ECBB9500D173F3 /* synopsis.html in Resources */ = {isa = PBXBuildFile; fileRef = AB529C0318ECBB9500D173F3 /* synopsis.html */; };
+		AB529C0F18ECBC1900D173F3 /* RELReadingListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529C0C18ECBC1900D173F3 /* RELReadingListDataSource.m */; };
+		AB529C1018ECBC1900D173F3 /* RELReadingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529C0E18ECBC1900D173F3 /* RELReadingListController.m */; };
+		AB529C1A18ECBD2600D173F3 /* RELAddBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529C1418ECBD2600D173F3 /* RELAddBookController.m */; };
+		AB529C1B18ECBD2600D173F3 /* RELViewBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529C1618ECBD2600D173F3 /* RELViewBookController.m */; };
+		AB529C1C18ECBD2600D173F3 /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529C1818ECBD2600D173F3 /* RELEditBookController.m */; };
+		AB529C1D18ECBD2600D173F3 /* UndoInputAccessory.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB529C1918ECBD2600D173F3 /* UndoInputAccessory.xib */; };
+		AB529C2418ECBDA400D173F3 /* RELAuthorDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529C1F18ECBDA400D173F3 /* RELAuthorDataSource.m */; };
+		AB529C2518ECBDA400D173F3 /* RELSelectAuthorController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529C2118ECBDA400D173F3 /* RELSelectAuthorController.m */; };
+		AB529C2618ECBDA400D173F3 /* RELAddAuthorController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB529C2318ECBDA400D173F3 /* RELAddAuthorController.m */; };
+		AB7BA01D18F0624C00E13EC0 /* AppledocSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB7BA01C18F0624C00E13EC0 /* AppledocSettings.plist */; };
+		ABA612D918EC9F1600E37A61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA612D818EC9F1600E37A61 /* Foundation.framework */; };
+		ABA612DB18EC9F1600E37A61 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA612DA18EC9F1600E37A61 /* CoreGraphics.framework */; };
+		ABA612DD18EC9F1600E37A61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA612DC18EC9F1600E37A61 /* UIKit.framework */; };
+		ABA612E318EC9F1600E37A61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABA612E118EC9F1600E37A61 /* InfoPlist.strings */; };
+		ABA612E518EC9F1600E37A61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA612E418EC9F1600E37A61 /* main.m */; };
+		ABA612F218EC9F1600E37A61 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA612F118EC9F1600E37A61 /* XCTest.framework */; };
+		ABA612F318EC9F1600E37A61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA612D818EC9F1600E37A61 /* Foundation.framework */; };
+		ABA612F418EC9F1600E37A61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA612DC18EC9F1600E37A61 /* UIKit.framework */; };
+		ABA612FC18EC9F1600E37A61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABA612FA18EC9F1600E37A61 /* InfoPlist.strings */; };
+		ABA612FE18EC9F1600E37A61 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA612FD18EC9F1600E37A61 /* UnitTests.m */; };
+		ABD4AF0118ECC8E600616B02 /* libReadingListModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB229EA218EC9F5200275A8A /* libReadingListModel.a */; };
+		ABD4AF1818ECCB2700616B02 /* ReadingListBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ABD4AF1718ECCB2700616B02 /* ReadingListBundle.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB229EA118EC9F5200275A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB229E9C18EC9F5200275A8A /* ReadingList Model.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABA612A318EC9EE600E37A61;
+			remoteInfo = "ReadingList Model";
+		};
+		AB529B9B18ECB8BC00D173F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB229E9C18EC9F5200275A8A /* ReadingList Model.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AB529B6418ECAB0A00D173F3;
+			remoteInfo = UnitTests;
+		};
+		AB529C2718ECBE5F00D173F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB229E9C18EC9F5200275A8A /* ReadingList Model.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = ABA612A218EC9EE600E37A61;
+			remoteInfo = "ReadingList Model";
+		};
+		AB7BA00918F04CC400E13EC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB229E9C18EC9F5200275A8A /* ReadingList Model.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = ABD4AF0518ECC97300616B02;
+			remoteInfo = ReadingListBundle;
+		};
+		ABA612F518EC9F1600E37A61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABA612CD18EC9F1600E37A61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABA612D418EC9F1600E37A61;
+			remoteInfo = "ReadingList App";
+		};
+		ABD4AF1618ECCB2700616B02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB229E9C18EC9F5200275A8A /* ReadingList Model.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABD4AF0618ECC97300616B02;
+			remoteInfo = ReadingListBundle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB229E9C18EC9F5200275A8A /* ReadingList Model.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "ReadingList Model.xcodeproj"; path = "../ReadingList Model/ReadingList Model.xcodeproj"; sourceTree = "<group>"; };
+		AB529B9618ECB8BC00D173F3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AB529B9D18ECB92000D173F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB529B9F18ECB94B00D173F3 /* AppDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppDefaults.plist; sourceTree = "<group>"; };
+		AB529BA118ECB95A00D173F3 /* RELAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELAppDelegate.h; sourceTree = "<group>"; };
+		AB529BA218ECB95A00D173F3 /* RELAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELAppDelegate.m; sourceTree = "<group>"; };
+		AB529BA318ECB95A00D173F3 /* RELAppDelegate+Appearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RELAppDelegate+Appearance.h"; sourceTree = "<group>"; };
+		AB529BA418ECB95A00D173F3 /* RELAppDelegate+Appearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RELAppDelegate+Appearance.m"; sourceTree = "<group>"; };
+		AB529BA718ECB97200D173F3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AB529BA818ECB97200D173F3 /* ReadingList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ReadingList.storyboard; sourceTree = "<group>"; };
+		AB529BA918ECB97200D173F3 /* iTunesReadingList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iTunesReadingList.storyboard; sourceTree = "<group>"; };
+		AB529BAA18ECB97200D173F3 /* iTunesSearch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iTunesSearch.storyboard; sourceTree = "<group>"; };
+		AB529BAF18ECB99700D173F3 /* iTunesSearch-Autolayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "iTunesSearch-Autolayout.storyboard"; sourceTree = "<group>"; };
+		AB529BB018ECB99700D173F3 /* Main-Autolayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-Autolayout.storyboard"; sourceTree = "<group>"; };
+		AB529BB118ECB99700D173F3 /* ReadingList-Autolayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "ReadingList-Autolayout.storyboard"; sourceTree = "<group>"; };
+		AB529BB918ECBA2800D173F3 /* UIStoryboardSegue+RELAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+RELAdditions.h"; sourceTree = "<group>"; };
+		AB529BBA18ECBA2800D173F3 /* UIStoryboardSegue+RELAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+RELAdditions.m"; sourceTree = "<group>"; };
+		AB529BBB18ECBA2800D173F3 /* NSString+RELAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RELAdditions.h"; sourceTree = "<group>"; };
+		AB529BBC18ECBA2800D173F3 /* NSString+RELAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RELAdditions.m"; sourceTree = "<group>"; };
+		AB529BBD18ECBA2800D173F3 /* UIColor+RELAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RELAdditions.h"; sourceTree = "<group>"; };
+		AB529BBE18ECBA2800D173F3 /* UIColor+RELAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RELAdditions.m"; sourceTree = "<group>"; };
+		AB529BF218ECBB6E00D173F3 /* RELiTunesReadingListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELiTunesReadingListCell.h; sourceTree = "<group>"; };
+		AB529BF318ECBB6E00D173F3 /* RELiTunesReadingListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELiTunesReadingListCell.m; sourceTree = "<group>"; };
+		AB529BF418ECBB6E00D173F3 /* RELiTunesReadingListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELiTunesReadingListDataSource.h; sourceTree = "<group>"; };
+		AB529BF518ECBB6E00D173F3 /* RELiTunesReadingListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELiTunesReadingListDataSource.m; sourceTree = "<group>"; };
+		AB529BF818ECBB9400D173F3 /* RELSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELSearchController.h; sourceTree = "<group>"; };
+		AB529BF918ECBB9400D173F3 /* RELSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELSearchController.m; sourceTree = "<group>"; };
+		AB529BFA18ECBB9400D173F3 /* RELSearchResultsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELSearchResultsCell.h; sourceTree = "<group>"; };
+		AB529BFB18ECBB9400D173F3 /* RELSearchResultsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELSearchResultsCell.m; sourceTree = "<group>"; };
+		AB529BFC18ECBB9400D173F3 /* RELSearchResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELSearchResultsController.h; sourceTree = "<group>"; };
+		AB529BFD18ECBB9400D173F3 /* RELSearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELSearchResultsController.m; sourceTree = "<group>"; };
+		AB529BFE18ECBB9500D173F3 /* RELSearchResultsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELSearchResultsDataSource.h; sourceTree = "<group>"; };
+		AB529BFF18ECBB9500D173F3 /* RELSearchResultsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELSearchResultsDataSource.m; sourceTree = "<group>"; };
+		AB529C0018ECBB9500D173F3 /* RELSearchResultsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELSearchResultsDetailController.h; sourceTree = "<group>"; };
+		AB529C0118ECBB9500D173F3 /* RELSearchResultsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELSearchResultsDetailController.m; sourceTree = "<group>"; };
+		AB529C0218ECBB9500D173F3 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		AB529C0318ECBB9500D173F3 /* synopsis.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = synopsis.html; sourceTree = "<group>"; };
+		AB529C0B18ECBC1900D173F3 /* RELReadingListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELReadingListDataSource.h; sourceTree = "<group>"; };
+		AB529C0C18ECBC1900D173F3 /* RELReadingListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELReadingListDataSource.m; sourceTree = "<group>"; };
+		AB529C0D18ECBC1900D173F3 /* RELReadingListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELReadingListController.h; sourceTree = "<group>"; };
+		AB529C0E18ECBC1900D173F3 /* RELReadingListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELReadingListController.m; sourceTree = "<group>"; };
+		AB529C1318ECBD2600D173F3 /* RELAddBookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELAddBookController.h; sourceTree = "<group>"; };
+		AB529C1418ECBD2600D173F3 /* RELAddBookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELAddBookController.m; sourceTree = "<group>"; };
+		AB529C1518ECBD2600D173F3 /* RELViewBookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELViewBookController.h; sourceTree = "<group>"; };
+		AB529C1618ECBD2600D173F3 /* RELViewBookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELViewBookController.m; sourceTree = "<group>"; };
+		AB529C1718ECBD2600D173F3 /* RELEditBookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELEditBookController.h; sourceTree = "<group>"; };
+		AB529C1818ECBD2600D173F3 /* RELEditBookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELEditBookController.m; sourceTree = "<group>"; };
+		AB529C1918ECBD2600D173F3 /* UndoInputAccessory.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UndoInputAccessory.xib; sourceTree = "<group>"; };
+		AB529C1E18ECBDA400D173F3 /* RELAuthorDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELAuthorDataSource.h; sourceTree = "<group>"; };
+		AB529C1F18ECBDA400D173F3 /* RELAuthorDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELAuthorDataSource.m; sourceTree = "<group>"; };
+		AB529C2018ECBDA400D173F3 /* RELSelectAuthorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELSelectAuthorController.h; sourceTree = "<group>"; };
+		AB529C2118ECBDA400D173F3 /* RELSelectAuthorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELSelectAuthorController.m; sourceTree = "<group>"; };
+		AB529C2218ECBDA400D173F3 /* RELAddAuthorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RELAddAuthorController.h; sourceTree = "<group>"; };
+		AB529C2318ECBDA400D173F3 /* RELAddAuthorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RELAddAuthorController.m; sourceTree = "<group>"; };
+		AB7BA01C18F0624C00E13EC0 /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
+		ABA612D518EC9F1600E37A61 /* ReadingList App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReadingList App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA612D818EC9F1600E37A61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ABA612DA18EC9F1600E37A61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ABA612DC18EC9F1600E37A61 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ABA612E018EC9F1600E37A61 /* ReadingList App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReadingList App-Info.plist"; sourceTree = "<group>"; };
+		ABA612E218EC9F1600E37A61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ABA612E418EC9F1600E37A61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABA612E618EC9F1600E37A61 /* ReadingList App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReadingList App-Prefix.pch"; sourceTree = "<group>"; };
+		ABA612F018EC9F1600E37A61 /* ReadingList AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReadingList AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA612F118EC9F1600E37A61 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ABA612F918EC9F1600E37A61 /* ReadingList AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReadingList AppTests-Info.plist"; sourceTree = "<group>"; };
+		ABA612FB18EC9F1600E37A61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ABA612FD18EC9F1600E37A61 /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABA612D218EC9F1600E37A61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD4AF0118ECC8E600616B02 /* libReadingListModel.a in Frameworks */,
+				AB529B9718ECB8BC00D173F3 /* CoreData.framework in Frameworks */,
+				ABA612DB18EC9F1600E37A61 /* CoreGraphics.framework in Frameworks */,
+				ABA612DD18EC9F1600E37A61 /* UIKit.framework in Frameworks */,
+				ABA612D918EC9F1600E37A61 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA612ED18EC9F1600E37A61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABA612F218EC9F1600E37A61 /* XCTest.framework in Frameworks */,
+				ABA612F418EC9F1600E37A61 /* UIKit.framework in Frameworks */,
+				ABA612F318EC9F1600E37A61 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB229E9D18EC9F5200275A8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB229EA218EC9F5200275A8A /* libReadingListModel.a */,
+				AB529B9C18ECB8BC00D173F3 /* UnitTests.xctest */,
+				ABD4AF1718ECCB2700616B02 /* ReadingListBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB529BB518ECB99F00D173F3 /* Autolayout Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AB529BAF18ECB99700D173F3 /* iTunesSearch-Autolayout.storyboard */,
+				AB529BB018ECB99700D173F3 /* Main-Autolayout.storyboard */,
+				AB529BB118ECB99700D173F3 /* ReadingList-Autolayout.storyboard */,
+			);
+			name = "Autolayout Storyboards";
+			sourceTree = "<group>";
+		};
+		AB529BB618ECB9EC00D173F3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AB529BB918ECBA2800D173F3 /* UIStoryboardSegue+RELAdditions.h */,
+				AB529BBA18ECBA2800D173F3 /* UIStoryboardSegue+RELAdditions.m */,
+				AB529BBB18ECBA2800D173F3 /* NSString+RELAdditions.h */,
+				AB529BBC18ECBA2800D173F3 /* NSString+RELAdditions.m */,
+				AB529BBD18ECBA2800D173F3 /* UIColor+RELAdditions.h */,
+				AB529BBE18ECBA2800D173F3 /* UIColor+RELAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		AB529BC318ECBA3400D173F3 /* iTunes Search */ = {
+			isa = PBXGroup;
+			children = (
+				AB529BF818ECBB9400D173F3 /* RELSearchController.h */,
+				AB529BF918ECBB9400D173F3 /* RELSearchController.m */,
+				AB529BFA18ECBB9400D173F3 /* RELSearchResultsCell.h */,
+				AB529BFB18ECBB9400D173F3 /* RELSearchResultsCell.m */,
+				AB529BFC18ECBB9400D173F3 /* RELSearchResultsController.h */,
+				AB529BFD18ECBB9400D173F3 /* RELSearchResultsController.m */,
+				AB529BFE18ECBB9500D173F3 /* RELSearchResultsDataSource.h */,
+				AB529BFF18ECBB9500D173F3 /* RELSearchResultsDataSource.m */,
+				AB529C0018ECBB9500D173F3 /* RELSearchResultsDetailController.h */,
+				AB529C0118ECBB9500D173F3 /* RELSearchResultsDetailController.m */,
+				AB529C0218ECBB9500D173F3 /* styles.css */,
+				AB529C0318ECBB9500D173F3 /* synopsis.html */,
+			);
+			path = "iTunes Search";
+			sourceTree = "<group>";
+		};
+		AB529BD718ECBAA500D173F3 /* iTunes Reading List */ = {
+			isa = PBXGroup;
+			children = (
+				AB529BF218ECBB6E00D173F3 /* RELiTunesReadingListCell.h */,
+				AB529BF318ECBB6E00D173F3 /* RELiTunesReadingListCell.m */,
+				AB529BF418ECBB6E00D173F3 /* RELiTunesReadingListDataSource.h */,
+				AB529BF518ECBB6E00D173F3 /* RELiTunesReadingListDataSource.m */,
+			);
+			path = "iTunes Reading List";
+			sourceTree = "<group>";
+		};
+		AB529BDE18ECBAC300D173F3 /* Reading List */ = {
+			isa = PBXGroup;
+			children = (
+				AB529C0B18ECBC1900D173F3 /* RELReadingListDataSource.h */,
+				AB529C0C18ECBC1900D173F3 /* RELReadingListDataSource.m */,
+				AB529C0D18ECBC1900D173F3 /* RELReadingListController.h */,
+				AB529C0E18ECBC1900D173F3 /* RELReadingListController.m */,
+			);
+			path = "Reading List";
+			sourceTree = "<group>";
+		};
+		AB529C1118ECBCBA00D173F3 /* Authors */ = {
+			isa = PBXGroup;
+			children = (
+				AB529C1E18ECBDA400D173F3 /* RELAuthorDataSource.h */,
+				AB529C1F18ECBDA400D173F3 /* RELAuthorDataSource.m */,
+				AB529C2018ECBDA400D173F3 /* RELSelectAuthorController.h */,
+				AB529C2118ECBDA400D173F3 /* RELSelectAuthorController.m */,
+				AB529C2218ECBDA400D173F3 /* RELAddAuthorController.h */,
+				AB529C2318ECBDA400D173F3 /* RELAddAuthorController.m */,
+			);
+			path = Authors;
+			sourceTree = "<group>";
+		};
+		AB529C1218ECBCD300D173F3 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				AB529C1318ECBD2600D173F3 /* RELAddBookController.h */,
+				AB529C1418ECBD2600D173F3 /* RELAddBookController.m */,
+				AB529C1518ECBD2600D173F3 /* RELViewBookController.h */,
+				AB529C1618ECBD2600D173F3 /* RELViewBookController.m */,
+				AB529C1718ECBD2600D173F3 /* RELEditBookController.h */,
+				AB529C1818ECBD2600D173F3 /* RELEditBookController.m */,
+				AB529C1918ECBD2600D173F3 /* UndoInputAccessory.xib */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		ABA612CC18EC9F1600E37A61 = {
+			isa = PBXGroup;
+			children = (
+				AB7BA01C18F0624C00E13EC0 /* AppledocSettings.plist */,
+				AB229E9C18EC9F5200275A8A /* ReadingList Model.xcodeproj */,
+				ABA612DE18EC9F1600E37A61 /* ReadingList App */,
+				ABA612F718EC9F1600E37A61 /* ReadingList App Tests */,
+				ABA612D718EC9F1600E37A61 /* Frameworks */,
+				ABA612D618EC9F1600E37A61 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABA612D618EC9F1600E37A61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABA612D518EC9F1600E37A61 /* ReadingList App.app */,
+				ABA612F018EC9F1600E37A61 /* ReadingList AppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABA612D718EC9F1600E37A61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB529B9618ECB8BC00D173F3 /* CoreData.framework */,
+				ABA612D818EC9F1600E37A61 /* Foundation.framework */,
+				ABA612DA18EC9F1600E37A61 /* CoreGraphics.framework */,
+				ABA612DC18EC9F1600E37A61 /* UIKit.framework */,
+				ABA612F118EC9F1600E37A61 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABA612DE18EC9F1600E37A61 /* ReadingList App */ = {
+			isa = PBXGroup;
+			children = (
+				AB529B9F18ECB94B00D173F3 /* AppDefaults.plist */,
+				AB529BA118ECB95A00D173F3 /* RELAppDelegate.h */,
+				AB529BA218ECB95A00D173F3 /* RELAppDelegate.m */,
+				AB529BA318ECB95A00D173F3 /* RELAppDelegate+Appearance.h */,
+				AB529BA418ECB95A00D173F3 /* RELAppDelegate+Appearance.m */,
+				AB529BA718ECB97200D173F3 /* Main.storyboard */,
+				AB529BA818ECB97200D173F3 /* ReadingList.storyboard */,
+				AB529BA918ECB97200D173F3 /* iTunesReadingList.storyboard */,
+				AB529BAA18ECB97200D173F3 /* iTunesSearch.storyboard */,
+				AB529B9D18ECB92000D173F3 /* Images.xcassets */,
+				AB529BB518ECB99F00D173F3 /* Autolayout Storyboards */,
+				AB529BB618ECB9EC00D173F3 /* Categories */,
+				AB529BC318ECBA3400D173F3 /* iTunes Search */,
+				AB529BD718ECBAA500D173F3 /* iTunes Reading List */,
+				AB529BDE18ECBAC300D173F3 /* Reading List */,
+				AB529C1218ECBCD300D173F3 /* Books */,
+				AB529C1118ECBCBA00D173F3 /* Authors */,
+				ABA612DF18EC9F1600E37A61 /* Supporting Files */,
+			);
+			path = "ReadingList App";
+			sourceTree = "<group>";
+		};
+		ABA612DF18EC9F1600E37A61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABA612E018EC9F1600E37A61 /* ReadingList App-Info.plist */,
+				ABA612E118EC9F1600E37A61 /* InfoPlist.strings */,
+				ABA612E418EC9F1600E37A61 /* main.m */,
+				ABA612E618EC9F1600E37A61 /* ReadingList App-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABA612F718EC9F1600E37A61 /* ReadingList App Tests */ = {
+			isa = PBXGroup;
+			children = (
+				ABA612FD18EC9F1600E37A61 /* UnitTests.m */,
+				ABA612F818EC9F1600E37A61 /* Supporting Files */,
+			);
+			name = "ReadingList App Tests";
+			path = "ReadingList AppTests";
+			sourceTree = "<group>";
+		};
+		ABA612F818EC9F1600E37A61 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABA612F918EC9F1600E37A61 /* ReadingList AppTests-Info.plist */,
+				ABA612FA18EC9F1600E37A61 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABA612D418EC9F1600E37A61 /* ReadingList App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABA6130118EC9F1600E37A61 /* Build configuration list for PBXNativeTarget "ReadingList App" */;
+			buildPhases = (
+				ABA612D118EC9F1600E37A61 /* Sources */,
+				ABA612D218EC9F1600E37A61 /* Frameworks */,
+				ABA612D318EC9F1600E37A61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB7BA00A18F04CC400E13EC0 /* PBXTargetDependency */,
+				AB529C2818ECBE5F00D173F3 /* PBXTargetDependency */,
+			);
+			name = "ReadingList App";
+			productName = "ReadingList App";
+			productReference = ABA612D518EC9F1600E37A61 /* ReadingList App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABA612EF18EC9F1600E37A61 /* ReadingList AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABA6130418EC9F1600E37A61 /* Build configuration list for PBXNativeTarget "ReadingList AppTests" */;
+			buildPhases = (
+				ABA612EC18EC9F1600E37A61 /* Sources */,
+				ABA612ED18EC9F1600E37A61 /* Frameworks */,
+				ABA612EE18EC9F1600E37A61 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABA612F618EC9F1600E37A61 /* PBXTargetDependency */,
+			);
+			name = "ReadingList AppTests";
+			productName = "ReadingList AppTests";
+			productReference = ABA612F018EC9F1600E37A61 /* ReadingList AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABA612CD18EC9F1600E37A61 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = REL;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "About Objects";
+				TargetAttributes = {
+					ABA612D418EC9F1600E37A61 = {
+						DevelopmentTeam = 7J7LD9SB6Q;
+					};
+					ABA612EF18EC9F1600E37A61 = {
+						TestTargetID = ABA612D418EC9F1600E37A61;
+					};
+				};
+			};
+			buildConfigurationList = ABA612D018EC9F1600E37A61 /* Build configuration list for PBXProject "ReadingList App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ABA612CC18EC9F1600E37A61;
+			productRefGroup = ABA612D618EC9F1600E37A61 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AB229E9D18EC9F5200275A8A /* Products */;
+					ProjectRef = AB229E9C18EC9F5200275A8A /* ReadingList Model.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				ABA612D418EC9F1600E37A61 /* ReadingList App */,
+				ABA612EF18EC9F1600E37A61 /* ReadingList AppTests */,
+				AB7BA00B18F0561100E13EC0 /* Generate Documentation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AB229EA218EC9F5200275A8A /* libReadingListModel.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReadingListModel.a;
+			remoteRef = AB229EA118EC9F5200275A8A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AB529B9C18ECB8BC00D173F3 /* UnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.xctest;
+			remoteRef = AB529B9B18ECB8BC00D173F3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		ABD4AF1718ECCB2700616B02 /* ReadingListBundle.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReadingListBundle.bundle;
+			remoteRef = ABD4AF1618ECCB2700616B02 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABA612D318EC9F1600E37A61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB529C0A18ECBB9500D173F3 /* synopsis.html in Resources */,
+				AB529BAC18ECB97200D173F3 /* ReadingList.storyboard in Resources */,
+				AB529BAE18ECB97200D173F3 /* iTunesSearch.storyboard in Resources */,
+				AB529BB318ECB99700D173F3 /* Main-Autolayout.storyboard in Resources */,
+				ABA612E318EC9F1600E37A61 /* InfoPlist.strings in Resources */,
+				AB529B9E18ECB92000D173F3 /* Images.xcassets in Resources */,
+				AB529BA018ECB94B00D173F3 /* AppDefaults.plist in Resources */,
+				AB529BAB18ECB97200D173F3 /* Main.storyboard in Resources */,
+				AB529C1D18ECBD2600D173F3 /* UndoInputAccessory.xib in Resources */,
+				AB7BA01D18F0624C00E13EC0 /* AppledocSettings.plist in Resources */,
+				AB529BAD18ECB97200D173F3 /* iTunesReadingList.storyboard in Resources */,
+				AB529C0918ECBB9500D173F3 /* styles.css in Resources */,
+				AB529BB418ECB99700D173F3 /* ReadingList-Autolayout.storyboard in Resources */,
+				AB529BB218ECB99700D173F3 /* iTunesSearch-Autolayout.storyboard in Resources */,
+				ABD4AF1818ECCB2700616B02 /* ReadingListBundle.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA612EE18EC9F1600E37A61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABA612FC18EC9F1600E37A61 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AB7BA00F18F0563000E13EC0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc \"`pwd`\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABA612D118EC9F1600E37A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB529BA518ECB95A00D173F3 /* RELAppDelegate.m in Sources */,
+				AB529BC118ECBA2800D173F3 /* NSString+RELAdditions.m in Sources */,
+				AB529C1018ECBC1900D173F3 /* RELReadingListController.m in Sources */,
+				AB529BA618ECB95A00D173F3 /* RELAppDelegate+Appearance.m in Sources */,
+				AB529C0718ECBB9500D173F3 /* RELSearchResultsDataSource.m in Sources */,
+				AB529C0418ECBB9500D173F3 /* RELSearchController.m in Sources */,
+				AB529C2518ECBDA400D173F3 /* RELSelectAuthorController.m in Sources */,
+				ABA612E518EC9F1600E37A61 /* main.m in Sources */,
+				AB529C0F18ECBC1900D173F3 /* RELReadingListDataSource.m in Sources */,
+				AB529BC018ECBA2800D173F3 /* UIStoryboardSegue+RELAdditions.m in Sources */,
+				AB529BF618ECBB6E00D173F3 /* RELiTunesReadingListCell.m in Sources */,
+				AB529C0818ECBB9500D173F3 /* RELSearchResultsDetailController.m in Sources */,
+				AB529C0518ECBB9500D173F3 /* RELSearchResultsCell.m in Sources */,
+				AB529C1C18ECBD2600D173F3 /* RELEditBookController.m in Sources */,
+				AB529C1B18ECBD2600D173F3 /* RELViewBookController.m in Sources */,
+				AB529C1A18ECBD2600D173F3 /* RELAddBookController.m in Sources */,
+				AB529BF718ECBB6E00D173F3 /* RELiTunesReadingListDataSource.m in Sources */,
+				AB529C2418ECBDA400D173F3 /* RELAuthorDataSource.m in Sources */,
+				AB529C0618ECBB9500D173F3 /* RELSearchResultsController.m in Sources */,
+				AB529C2618ECBDA400D173F3 /* RELAddAuthorController.m in Sources */,
+				AB529BC218ECBA2800D173F3 /* UIColor+RELAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA612EC18EC9F1600E37A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABA612FE18EC9F1600E37A61 /* UnitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB529C2818ECBE5F00D173F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReadingList Model";
+			targetProxy = AB529C2718ECBE5F00D173F3 /* PBXContainerItemProxy */;
+		};
+		AB7BA00A18F04CC400E13EC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReadingListBundle;
+			targetProxy = AB7BA00918F04CC400E13EC0 /* PBXContainerItemProxy */;
+		};
+		ABA612F618EC9F1600E37A61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABA612D418EC9F1600E37A61 /* ReadingList App */;
+			targetProxy = ABA612F518EC9F1600E37A61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABA612E118EC9F1600E37A61 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABA612E218EC9F1600E37A61 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ABA612FA18EC9F1600E37A61 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABA612FB18EC9F1600E37A61 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB7BA00D18F0561100E13EC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB7BA00E18F0561100E13EC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ABA612FF18EC9F1600E37A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ABA6130018EC9F1600E37A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABA6130218EC9F1600E37A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReadingList App/ReadingList App-Prefix.pch";
+				INFOPLIST_FILE = "ReadingList App/ReadingList App-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aboutobjects.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ABA6130318EC9F1600E37A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReadingList App/ReadingList App-Prefix.pch";
+				INFOPLIST_FILE = "ReadingList App/ReadingList App-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aboutobjects.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ABA6130518EC9F1600E37A61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReadingList App.app/ReadingList App";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReadingList App/ReadingList App-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ReadingList AppTests/ReadingList AppTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aboutobjects.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ABA6130618EC9F1600E37A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ReadingList App.app/ReadingList App";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ReadingList App/ReadingList App-Prefix.pch";
+				INFOPLIST_FILE = "ReadingList AppTests/ReadingList AppTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aboutobjects.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB7BA00C18F0561100E13EC0 /* Build configuration list for PBXAggregateTarget "Generate Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7BA00D18F0561100E13EC0 /* Debug */,
+				AB7BA00E18F0561100E13EC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABA612D018EC9F1600E37A61 /* Build configuration list for PBXProject "ReadingList App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA612FF18EC9F1600E37A61 /* Debug */,
+				ABA6130018EC9F1600E37A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABA6130118EC9F1600E37A61 /* Build configuration list for PBXNativeTarget "ReadingList App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA6130218EC9F1600E37A61 /* Debug */,
+				ABA6130318EC9F1600E37A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABA6130418EC9F1600E37A61 /* Build configuration list for PBXNativeTarget "ReadingList AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA6130518EC9F1600E37A61 /* Debug */,
+				ABA6130618EC9F1600E37A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABA612CD18EC9F1600E37A61 /* Project object */;
+}
