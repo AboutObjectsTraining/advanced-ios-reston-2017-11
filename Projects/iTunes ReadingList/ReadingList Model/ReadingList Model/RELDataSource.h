@@ -19,27 +19,23 @@ extern const BOOL RELUseAutolayout;
 // @name Configuration
 
 /** Must be overridden by subclasses to provide an array of NSSortDescriptor objects. */
-- (NSArray *)sortDescriptors;
-
+@property (nonatomic, readonly) NSArray *sortDescriptors;
 /** May be overridden by subclasses to provide a cache name. Default is `nil`. */
-- (NSString *)cacheName;
-
+@property (nonatomic, readonly) NSString *cacheName;
 /** May be overridden by subclasses to provide an entity name. Default is "RELBook". */
-- (NSString *)entityName;
-
+@property (nonatomic, readonly) NSString *entityName;
 /** May be overridden by subclasses to provide a section name keypath. Default is "author.name". */
-- (NSString *)sectionNameKeyPath;
-
+@property (nonatomic, readonly) NSString * sectionNameKeyPath;
 /** May be overridden by subclasses to provide an NSPredicate object. Default is `nil`. */
-- (NSPredicate *)predicate;
+@property (nonatomic, readonly) NSPredicate *predicate;
 
 /** May be overridden by subclasses to customize configuration of the fetchedResultsController. */
 - (void)configureFetchedResultsController;
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController; // TODO: Make readonly
+@property (strong, nonatomic, readonly) NSFetchedResultsController *fetchedResultsController;
 
 /** May be overridden by subclasses to customize configuration of the managedObjectContext. */
 - (void)configureManagedObjectContext;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic, readonly) NSManagedObjectContext *managedObjectContext;
 
 - (NSString *)reuseIdentifierForCellAtIndexPath:(NSIndexPath *)indexPath;
 

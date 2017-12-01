@@ -13,6 +13,10 @@ NSString * const RELReadingListCacheName = @"ReadingListCache";
 NSString * const RELUseAutolayoutNameKey = @"RELUseAutolayout";
 const BOOL RELUseAutolayout = NO;
 
+@interface RELDataSource ()
+@property (strong, nonatomic, readwrite) NSFetchedResultsController *fetchedResultsController;
+@property (strong, nonatomic, readwrite) NSManagedObjectContext *managedObjectContext;
+@end
 
 @implementation RELDataSource
 
@@ -105,7 +109,7 @@ const BOOL RELUseAutolayout = NO;
     if (fetchedObjs == nil) DLOG(@"Unable to fetch with request %@. Error was %@ %@", fetchRequest, e.localizedDescription, e.localizedFailureReason);
     if (fetchedObjs.count > 1 && iTunesID.intValue > 0) DLOG(@"WARNING: Duplicate objects found:\n%@", fetchedObjs);
     
-    return [fetchedObjs firstObject];
+    return fetchedObjs.firstObject;
 }
 
 

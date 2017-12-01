@@ -16,8 +16,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-//    self.viewBookController.tableView.contentInset = UIEdgeInsetsMake(-0, 0, 0, 0);
     self.viewBookController.book = self.book;
 }
 

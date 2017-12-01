@@ -5,7 +5,6 @@
 
 NSString * const RELiTunesSearchConcurrentOperationCountKey = @"RELiTunesSearchConcurrentOperationCount";
 
-
 @interface RELSearchResultsDataSource ()
 
 @property (strong, nonatomic) NSOperationQueue *operationQueue;

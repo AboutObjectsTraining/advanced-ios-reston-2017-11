@@ -56,7 +56,7 @@ NSString * const RELReadingListStoreType = @"sqlite";
     NSDictionary *options = @{ NSMigratePersistentStoresAutomaticallyOption : @YES,
                                NSInferMappingModelAutomaticallyOption : @YES };
     
-    BOOL isNewStore = ![NSFileManager.defaultManager fileExistsAtPath:[NSString stringWithUTF8String:[self.initialStoreURL fileSystemRepresentation]]];
+    BOOL isNewStore = ![NSFileManager.defaultManager fileExistsAtPath:[NSString stringWithUTF8String:self.initialStoreURL.fileSystemRepresentation]];
     NSError *error;
     NSPersistentStore *store = [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
                                                                          configuration:nil

@@ -4,8 +4,7 @@
 
 + (NSDictionary *)iTunesMappingDictionary
 {
-    return @{ RELBookSynopsisAttributes.text : RELiTunesAttributes.description,
-              };
+    return @{ RELBookSynopsisAttributes.text : RELiTunesAttributes.description };
 }
 
 
